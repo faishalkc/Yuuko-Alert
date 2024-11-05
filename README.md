@@ -1,2 +1,2 @@
 # Yuuko Alert
-Just a pop up program with Yuuko saying "Selamat Pagi"
+Yuuko-Alert is a desktop application that displays a pop-up message with the cheerful "Selamat Pagi" greeting from the character Yuujo in Nichijou, accompanied by her signature voice. The app is designed to bring a fun and uplifting start to the day, helping users begin their morning with a positive vibe. The pop-up can be set to appear at a specific time, based on the user's preference.
