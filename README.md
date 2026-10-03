@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/f565f024-f37e-45d6-872f-cb6841b9cb12" alt="Yuuko Alert Icon Placeholder" width="120" height="120" />
+<img src="https://github.com/user-attachments/assets/f565f024-f37e-45d6-872f-cb6841b9cb12" alt="Yuuko Alert Icon Placeholder" width="120" height="120" style="border-radius: 28px;" />
 
 # Yuuko Alert
 
