@@ -36,7 +36,7 @@ Whether you want a playful start to your morning or simply enjoy a little anime-
 
 ## 🖥️ Application Preview
 
-<img src="https://github.com/user-attachments/assets/21f4e4a0-d075-418c-9d0a-0287734ba884" alt="Yuuko Alert desktop application screenshot" width="373" />
+<img src="https://github.com/user-attachments/assets/21f4e4a0-d075-418c-9d0a-0287734ba884" alt="Yuuko Alert desktop application screenshot" width="420" />
 
 ## 🎮 How to Use
 
