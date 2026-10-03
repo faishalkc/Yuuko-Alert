@@ -95,9 +95,3 @@ The application brings a small piece of that cheerful anime atmosphere to your d
 * **Audio playback:** The character voice requires working audio output.
 * **Character assets:** The greeting and voice are inspired by material from *Nichijou*.
 * **Application behavior:** Features and startup behavior depend on the implementation included in this repository.
-
-## 👨‍💻 Author
-
-**Muhammad Faishal Hady**
-
-[![GitHub](https://img.shields.io/badge/GitHub-faishalkc-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/faishalkc)
