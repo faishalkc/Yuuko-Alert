@@ -1,18 +1,22 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/9e8e5c80-5c41-47df-bf4f-af620f0f2b47" alt="Yuuko Alert Icon Placeholder" width="120" height="120" />
+<img src="https://github.com/user-attachments/assets/9e8e5c80-5c41-47df-bf4f-af620f0f2b47" alt="Yuuko Alert Icon" width="120" height="120" />
 
 # Yuuko Alert
 
 ### A Cheerful Morning Greeting for Your Desktop
 
-[![Platform](https://img.shields.io/badge/Platform-Desktop-4C6CB3?style=for-the-badge\&logo=windows\&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
-[![Language](https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![Language](https://img.shields.io/badge/Language-Python-B08D35?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
+
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-B08D35?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
+[![Pygame](https://img.shields.io/badge/Pygame-Audio-46A832?style=flat-square&logo=python&logoColor=white)](https://www.pygame.org/)
+[![Pillow](https://img.shields.io/badge/Pillow-Image_Processing-367C80?style=flat-square&logo=python&logoColor=white)](https://python-pillow.org/)
 
 **Start your day with Yuuko's cheerful “Selamat Pagi!” greeting.**
 
-A small desktop application featuring a pop-up greeting inspired by Yuuko Aioi from *Nichijou*, accompanied by her signature voice.
+A small Windows desktop application featuring a pop-up greeting inspired by Yuuko Aioi from *Nichijou*, accompanied by her voice.
 
 </div>
 
@@ -20,19 +24,21 @@ A small desktop application featuring a pop-up greeting inspired by Yuuko Aioi f
 
 ## 📖 About
 
-Yuuko Alert is a desktop application created to bring a little fun and positivity to your day.
+Yuuko Alert is a lightweight desktop application created to bring a little fun and positivity to your day.
 
-Inspired by **Yuuko Aioi**, the cheerful and energetic character from the anime *Nichijou*, the application displays a pop-up message featuring the familiar Indonesian morning greeting, **“Selamat Pagi!”**, accompanied by her voice.
+Inspired by **Yuuko Aioi**, the cheerful and energetic character from the anime *Nichijou*, the application displays a pop-up window featuring the Indonesian morning greeting **“Selamat Pagi!”**, accompanied by an audio clip of Yuuko's voice.
 
-Whether you want a playful start to your morning or simply enjoy a little anime-inspired touch on your desktop, Yuuko Alert offers a simple way to add some character to your daily routine.
+The application uses a simple graphical interface with Yuuko's image, a greeting message, and an OK button to close the window. It provides a small, anime-inspired touch to your desktop without unnecessary complexity.
 
 ## ✨ Features
 
-* 🌞 **Cheerful Morning Greeting** — displays a “Selamat Pagi!” pop-up message.
-* 🔊 **Character Voice** — accompanies the greeting with Yuuko's signature voice.
-* 🪟 **Desktop Pop-Up** — presents the greeting in a dedicated application window.
-* 🎌 **Anime-Inspired Experience** — features Yuuko Aioi from *Nichijou*.
-* 💖 **Simple and Fun** — focuses on delivering a lighthearted greeting without unnecessary complexity.
+- 🌞 **Cheerful Morning Greeting** — displays a “Selamat Pagi!” message in a pop-up window.
+- 🔊 **Voice Playback** — plays an audio clip when the application starts.
+- 🖼️ **Character Image** — displays Yuuko's face alongside the greeting.
+- 🪟 **Always-on-Top Window** — keeps the greeting window above other windows.
+- 📐 **Compact Interface** — uses a fixed-size, centered window.
+- 🖥️ **Windows DPI Awareness** — enables process DPI awareness for display scaling.
+- 💖 **Simple Interaction** — close the application using the OK button.
 
 ## 🖥️ Application Preview
 
@@ -40,21 +46,22 @@ Whether you want a playful start to your morning or simply enjoy a little anime-
 
 ## 🎮 How to Use
 
-1. Launch Yuuko Alert.
-2. Let the application display its greeting pop-up.
-3. Enjoy Yuuko's cheerful “Selamat Pagi!” greeting and accompanying voice.
+1. Launch `YuukoAlert.py`.
+2. Wait for the Yuuko Alert window to appear.
+3. Listen to the accompanying voice clip and enjoy the greeting.
+4. Click **OK** to close the application.
 
-*The exact launch behavior depends on the application's implementation.*
+The audio playback and greeting window are initialized when the application starts.
 
 ## 📋 Requirements
 
-The requirements depend on how the application is distributed.
+- **Operating System:** Microsoft Windows.
+- **Python:** Python 3.
+- **Python Libraries:** Pygame and Pillow.
+- **Audio Output:** A working audio device to play the voice clip.
+- **Project Assets:** The image, icon, and audio files included in the `files` directory.
 
-* **Operating System:** A desktop operating system supported by the application.
-* **Application Files:** The executable or source files included in the repository.
-* **Audio Support:** A working audio output device to hear the character voice.
-
-If running from source, additional runtime requirements may apply depending on the implementation.
+Tkinter is included with most standard Python installations for Windows.
 
 ## 🚀 Getting Started
 
@@ -70,28 +77,63 @@ git clone https://github.com/faishalkc/Yuuko-Alert.git
 cd Yuuko-Alert
 ```
 
-### 3. Run the Application
+### 3. Install Dependencies
 
-Follow the instructions and use the appropriate entry point provided by the project.
+```bash
+python -m pip install pygame Pillow
+```
 
-If the application is distributed as a standalone executable, launch that executable instead.
+### 4. Run the Application
 
-> **Note:** The exact startup command and dependencies should be documented after confirming the repository's source files and project structure.
+```bash
+python YuukoAlert.py
+```
+
+**Note:** Run the application from the project root directory so that the relative paths to the files in `files/` resolve correctly.
 
 ## 📂 Project Structure
 
-The project structure depends on the files included in the repository. A detailed directory tree can be added once the source files and application assets have been verified.
+```text
+Yuuko-Alert/
+├── files/
+│   ├── face.png
+│   ├── icon.ico
+│   └── sound.MP3
+├── YuukoAlert.py
+└── README.md
+```
+
+| File | Description |
+|---|---|
+| `YuukoAlert.py` | Main Python script responsible for the application window, greeting, image, and audio playback. |
+| `files/face.png` | Character image displayed in the greeting window. |
+| `files/icon.ico` | Application window icon. |
+| `files/sound.MP3` | Audio clip played when the application starts. |
+| `README.md` | Project documentation. |
+
+## 🛠️ Technologies
+
+- **Python** — application logic.
+- **Tkinter** — graphical user interface.
+- **Pygame** — audio playback.
+- **Pillow** — image loading, resizing, and display.
+- **Windows API (`ctypes`)** — process DPI awareness.
 
 ## 🎨 Inspiration
 
 Yuuko Alert takes inspiration from **Yuuko Aioi**, one of the main characters in the comedy anime *Nichijou*.
 
-Known for her energetic personality and expressive reactions, Yuuko provides the inspiration for this playful desktop greeting experience.
+Known for her energetic personality and expressive reactions, Yuuko is the inspiration behind this playful desktop greeting. The application brings a small piece of that cheerful anime atmosphere to your daily computer use.
 
-The application brings a small piece of that cheerful anime atmosphere to your desktop.
+## ⚠️ Notes and Limitations
 
-## ⚠️ Notes
+- **Windows only:** The application uses Windows-specific functionality through `ctypes.windll.user32` and `iconbitmap()`.
+- **Required assets:** Keep `face.png`, `icon.ico`, and `sound.MP3` in the `files` directory.
+- **Run from the project directory:** The application uses relative asset paths.
+- **Audio playback:** The greeting's voice depends on successful audio initialization and a working audio output device.
+- **No automatic scheduling:** The current implementation plays the audio when the application launches; it does not schedule a greeting for a specific time.
+- **No installer included:** The repository provides the Python source and required assets. Python and its dependencies must be installed to run the source directly.
 
-* **Audio playback:** The character voice requires working audio output.
-* **Character assets:** The greeting and voice are inspired by material from *Nichijou*.
-* **Application behavior:** Features and startup behavior depend on the implementation included in this repository.
+## 📄 License
+
+No license has been specified for this project. Unless a license is added to the repository, the default copyright rules apply.
