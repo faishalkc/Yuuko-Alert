@@ -28,7 +28,7 @@ Yuuko Alert is a lightweight desktop application created to bring a little fun a
 
 Inspired by **Yuuko Aioi**, the cheerful and energetic character from the anime *Nichijou*, the application displays a pop-up window featuring the Indonesian morning greeting **“Selamat Pagi!”**, accompanied by an audio clip of Yuuko's voice.
 
-The application uses a simple graphical interface with Yuuko's image, a greeting message, and an OK button to close the window. It provides a small, anime-inspired touch to your desktop without unnecessary complexity.
+The application features a compact graphical interface with Yuuko's image, a greeting message, and an OK button to close the window. It brings a small, anime-inspired touch to your desktop without unnecessary complexity.
 
 ## ✨ Features
 
@@ -37,7 +37,7 @@ The application uses a simple graphical interface with Yuuko's image, a greeting
 - 🖼️ **Character Image** — displays Yuuko's face alongside the greeting.
 - 🪟 **Always-on-Top Window** — keeps the greeting window above other windows.
 - 📐 **Compact Interface** — uses a fixed-size, centered window.
-- 🖥️ **Windows DPI Awareness** — enables process DPI awareness for display scaling.
+- 🖥️ **Display Scaling Support** — includes Windows DPI awareness in the current version.
 - 💖 **Simple Interaction** — close the application using the OK button.
 
 ## 🖥️ Application Preview
@@ -46,50 +46,56 @@ The application uses a simple graphical interface with Yuuko's image, a greeting
 
 ## 🎮 How to Use
 
-1. Launch `YuukoAlert.py`.
-2. Wait for the Yuuko Alert window to appear.
-3. Listen to the accompanying voice clip and enjoy the greeting.
-4. Click **OK** to close the application.
+### Using the Windows Executable
 
-The audio playback and greeting window are initialized when the application starts.
+1. Download the ZIP package from the [GitHub Releases](https://github.com/faishalkc/Yuuko-Alert/releases) page.
+2. Extract the archive to a folder of your choice.
+3. Keep the executable and its required assets in their original directory structure.
+4. Launch the executable to display the greeting.
+5. Click **OK** to close the application.
+
+### Running from Source
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/faishalkc/Yuuko-Alert.git
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd Yuuko-Alert
+   ```
+
+3. Install the dependencies listed in `requirements.txt`:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+4. Run the application:
+
+   ```bash
+   python YuukoAlert.py
+   ```
+
+**Note:** Run the script from the project root directory so that the relative paths to the files in `files/` resolve correctly.
 
 ## 📋 Requirements
 
-- **Operating System:** Microsoft Windows.
-- **Python:** Python 3.
-- **Python Libraries:** Pygame and Pillow.
-- **Audio Output:** A working audio device to play the voice clip.
-- **Project Assets:** The image, icon, and audio files included in the `files` directory.
+### Windows Executable
 
-Tkinter is included with most standard Python installations for Windows.
+- Microsoft Windows.
+- The application assets included in the release package.
+- A working audio output device for voice playback.
 
-## 🚀 Getting Started
+### Source Code
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/faishalkc/Yuuko-Alert.git
-```
-
-### 2. Open the Project Directory
-
-```bash
-cd Yuuko-Alert
-```
-
-### 3. Install Dependencies
-
-```bash
-python -m pip install pygame Pillow
-```
-
-### 4. Run the Application
-
-```bash
-python YuukoAlert.py
-```
-
-**Note:** Run the application from the project root directory so that the relative paths to the files in `files/` resolve correctly.
+- Microsoft Windows.
+- Python 3 with Tkinter available.
+- Pygame.
+- Pillow.
 
 ## 📂 Project Structure
 
@@ -100,15 +106,17 @@ Yuuko-Alert/
 │   ├── icon.ico
 │   └── sound.MP3
 ├── YuukoAlert.py
+├── requirements.txt
 └── README.md
 ```
 
 | File | Description |
 |---|---|
-| `YuukoAlert.py` | Main Python script responsible for the application window, greeting, image, and audio playback. |
+| `YuukoAlert.py` | Main Python script for the application window, greeting, image, and audio playback. |
 | `files/face.png` | Character image displayed in the greeting window. |
 | `files/icon.ico` | Application window icon. |
 | `files/sound.MP3` | Audio clip played when the application starts. |
+| `requirements.txt` | List of third-party Python dependencies. |
 | `README.md` | Project documentation. |
 
 ## 🛠️ Technologies
@@ -117,7 +125,7 @@ Yuuko-Alert/
 - **Tkinter** — graphical user interface.
 - **Pygame** — audio playback.
 - **Pillow** — image loading, resizing, and display.
-- **Windows API (`ctypes`)** — process DPI awareness.
+- **Windows API (`ctypes`)** — Windows-specific DPI awareness.
 
 ## 🎨 Inspiration
 
@@ -125,14 +133,26 @@ Yuuko Alert takes inspiration from **Yuuko Aioi**, one of the main characters in
 
 Known for her energetic personality and expressive reactions, Yuuko is the inspiration behind this playful desktop greeting. The application brings a small piece of that cheerful anime atmosphere to your daily computer use.
 
+## 📦 Releases
+
+### v1.0 — Initial Release
+
+The initial release of Yuuko Alert, featuring the morning greeting, character image, voice playback, and a simple desktop pop-up.
+
+### v2.0 — Refinements
+
+A refined version of Yuuko Alert, featuring improvements to the application's desktop presentation and window behavior.
+
+Download the available packages from the [GitHub Releases](https://github.com/faishalkc/Yuuko-Alert/releases) page.
+
 ## ⚠️ Notes and Limitations
 
-- **Windows only:** The application uses Windows-specific functionality through `ctypes.windll.user32` and `iconbitmap()`.
+- **Windows only:** The application uses Windows-specific functionality through `ctypes` and Tkinter's `iconbitmap()`.
 - **Required assets:** Keep `face.png`, `icon.ico`, and `sound.MP3` in the `files` directory.
-- **Run from the project directory:** The application uses relative asset paths.
-- **Audio playback:** The greeting's voice depends on successful audio initialization and a working audio output device.
-- **No automatic scheduling:** The current implementation plays the audio when the application launches; it does not schedule a greeting for a specific time.
-- **No installer included:** The repository provides the Python source and required assets. Python and its dependencies must be installed to run the source directly.
+- **Relative asset paths:** Run the application from the project root directory unless the executable package has been prepared to handle its assets accordingly.
+- **Audio playback:** Voice playback depends on successful audio initialization and a working audio output device.
+- **No automatic scheduling:** The application plays the audio when launched; it does not schedule a greeting for a specific time.
+- **Executable availability:** Download a compiled executable from the Releases page if you prefer not to install Python and the required libraries.
 
 ## 📄 License
 
