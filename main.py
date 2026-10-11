@@ -1,10 +1,10 @@
-import ctypes
-import ctypes.wintypes
 import pygame
 import tkinter as tk
 import tkinter.font as tkFont
 from PIL import Image, ImageTk
 
+winapi = None
+from platforms import windows as winapi
 
 class SoundPlayer:
     def __init__(self, path, volume):
@@ -30,12 +30,10 @@ class AlertWindow:
     BUTTON_TEXT = "OK"
     BUTTON_WIDTH = 10
 
-    ICON_PATH = "files/icon.ico"
+    FILES_DIR = "files"
     IMAGE_PATH = "files/face.png"
     SOUND_PATH = "files/sound.mp3"
     VOLUME = 0.8
-
-    SPI_GETWORKAREA = 48
 
     def __init__(self):
         self.root = tk.Tk()
@@ -60,8 +58,9 @@ class AlertWindow:
 
     def _setup_window(self):
         self.root.resizable(False, False)
-        self.root.iconbitmap(self.ICON_PATH)
         self.root.title(self.TITLE)
+        if winapi:
+            winapi.set_icon(self.root, self.FILES_DIR)
 
     def _setup_font(self):
         system_font = tkFont.nametofont("TkDefaultFont").actual()
@@ -97,28 +96,29 @@ class AlertWindow:
                          ipady=self._s(self.BASE_BUTTON_IPADY))
 
     def _setup_attributes(self):
-        self.root.attributes("-toolwindow", False)
         self.root.attributes("-topmost", True)
 
     def _get_work_area(self):
-        rect = ctypes.wintypes.RECT()
-        ctypes.windll.user32.SystemParametersInfoW(
-            self.SPI_GETWORKAREA, 0, ctypes.byref(rect), 0)
-        return rect
+        if winapi:
+            return winapi.get_work_area(self.root)
+        return (0, 0,
+                self.root.winfo_screenwidth(),
+                self.root.winfo_screenheight())
 
     def _center(self):
         self.root.update_idletasks()
         w = max(self.root.winfo_reqwidth(), self._s(self.BASE_MIN_WIDTH))
         h = self.root.winfo_reqheight()
 
-        area = self._get_work_area()
-        x = area.left + (area.right - area.left - w) // 2
-        y = area.top + (area.bottom - area.top - h) // 2
+        left, top, right, bottom = self._get_work_area()
+        x = left + (right - left - w) // 2
+        y = top + (bottom - top - h) // 2
         self.root.geometry(f"{w}x{h}+{x}+{y}")
 
 
 def main():
-    ctypes.windll.user32.SetProcessDPIAware()
+    if winapi:
+        winapi.enable_dpi_awareness()
     pygame.init()
     AlertWindow().run()
 
