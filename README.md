@@ -105,19 +105,39 @@ Yuuko-Alert/
 │   ├── face.png
 │   ├── icon.ico
 │   └── sound.MP3
-├── YuukoAlert.py
+├── platforms/
+│   └── windows.py
+├── main.py
 ├── requirements.txt
 └── README.md
 ```
 
 | File | Description |
 |---|---|
-| `YuukoAlert.py` | Main Python script for the application window, greeting, image, and audio playback. |
+| `main.py` | Main Python script containing the application window (`AlertWindow`), greeting, image, and audio playback (`SoundPlayer`). |
+| `platforms/windows.py` | Windows-specific functions: DPI awareness, desktop work area (above the taskbar), and window icon. |
 | `files/face.png` | Character image displayed in the greeting window. |
-| `files/icon.ico` | Application window icon. |
+| `files/icon.ico` | Application window icon (used on Windows). |
 | `files/sound.MP3` | Audio clip played when the application starts. |
 | `requirements.txt` | List of third-party Python dependencies. |
 | `README.md` | Project documentation. |
+
+## 🐧 Running on Linux / macOS
+
+The Windows-specific code is isolated in `platforms/windows.py`. To run the app on other systems:
+
+1. Open `main.py`.
+2. Delete this single line near the top:
+
+```python
+   from platforms import windows as winapi
+```
+
+3. Run `python main.py`.
+
+Without that line, the app falls back to default Tk behavior: the window is centered on the full screen and the default Tk icon is used. The `platforms/` folder can be safely removed.
+
+> On some Linux distributions, Tkinter must be installed separately, for example `sudo apt install python3-tk`.
 
 ## 🛠️ Technologies
 
