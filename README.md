@@ -104,7 +104,7 @@ Yuuko-Alert/
 ├── files/
 │   ├── face.png
 │   ├── icon.ico
-│   └── sound.MP3
+│   └── sound.mp3
 ├── platforms/
 │   └── windows.py
 ├── main.py
