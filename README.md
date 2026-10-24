@@ -76,7 +76,7 @@ The application features a compact graphical interface with Yuuko's image, a gre
 4. Run the application:
 
    ```bash
-   python YuukoAlert.py
+   python main.py
    ```
 
 **Note:** Run the script from the project root directory so that the relative paths to the files in `files/` resolve correctly.
