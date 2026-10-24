@@ -1,16 +1,15 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/9e8e5c80-5c41-47df-bf4f-af620f0f2b47" alt="Yuuko Alert Icon" width="120" height="120" />
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieeRWIRrEnIFTEf3PQQj-7FLBOb2XvgQryDKUI_o_jtddHzogqpFCRXDzqgShHBwscSxrt_y60OxipEt5wBhGpfTNyx3hXuaCqpnPoIJOEeX1Jgdi6QtMCzgbJ2Ae7lzfE60KyZ5R8zVLI2KHwWZnfTCxxhRehC3PGP06ncK5ZOUQMleZkMIKlBX_EfK4/s512/130423.png" alt="Yuuko Alert Icon" width="120" height="120" />
 
 # Yuuko Alert
 
 ### A Cheerful Morning Greeting for Your Desktop
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=opentofu&logoColor=white)](https://www.microsoft.com/windows)
-[![Language](https://img.shields.io/badge/Language-Python-B08D35?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
-
-[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-B08D35?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=opentofu&logoColor=white)](https://www.microsoft.com/windows)
+[![Language](https://img.shields.io/badge/Language-Python-B08D35?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-7952B3?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
 [![Pygame](https://img.shields.io/badge/Pygame-Audio-46A832?style=flat-square&logo=python&logoColor=white)](https://www.pygame.org/)
 [![Pillow](https://img.shields.io/badge/Pillow-Image_Processing-367C80?style=flat-square&logo=python&logoColor=white)](https://python-pillow.org/)
 
