@@ -152,10 +152,6 @@ Yuuko Alert takes inspiration from **Yuuko Aioi**, one of the main characters in
 
 Known for her energetic personality and expressive reactions, Yuuko is the inspiration behind this playful desktop greeting. The application brings a small piece of that cheerful anime atmosphere to your daily computer use.
 
-## 📦 Releases
-
-Download the latest version of Yuuko Alert from the [GitHub Releases](https://github.com/faishalkc/Yuuko-Alert/releases) page.
-
 ## ⚠️ Notes and Limitations
 
 - **Windows only:** The application uses Windows-specific functionality through `ctypes` and Tkinter's `iconbitmap()`.
