@@ -165,6 +165,6 @@ Known for her energetic personality and expressive reactions, Yuuko is the inspi
 
 ## 📄 License
 
-Yuuko Alert is open-source software licensed under the [MIT License](LICENSE).
+Yuuko Alert is open-source software licensed under the [MIT License](LICENSE.md).
 
 You are free to use, modify, and distribute this software in accordance with the terms of the license.
