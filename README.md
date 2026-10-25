@@ -8,10 +8,10 @@
 
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=opentofu&logoColor=white)](https://www.microsoft.com/windows)
 [![Language](https://img.shields.io/badge/Language-Python-B08D35?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
 [![Tkinter](https://img.shields.io/badge/GUI-Tkinter-7952B3?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/tkinter.html)
 [![Pygame](https://img.shields.io/badge/Pygame-Audio-46A832?style=flat-square&logo=python&logoColor=white)](https://www.pygame.org/)
 [![Pillow](https://img.shields.io/badge/Pillow-Image_Processing-367C80?style=flat-square&logo=python&logoColor=white)](https://python-pillow.org/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/faishalkc/Yuuko-Alert)
 
 **Start your day with Yuuko's cheerful “Selamat Pagi!” greeting.**
 
@@ -117,7 +117,7 @@ Yuuko-Alert/
 | `platforms/windows.py` | Windows-specific functions: DPI awareness, desktop work area (above the taskbar), and window icon. |
 | `files/face.png` | Character image displayed in the greeting window. |
 | `files/icon.ico` | Application window icon (used on Windows). |
-| `files/sound.MP3` | Audio clip played when the application starts. |
+| `files/sound.mp3` | Audio clip played when the application starts. |
 | `requirements.txt` | List of third-party Python dependencies. |
 | `README.md` | Project documentation. |
 
@@ -155,7 +155,7 @@ Known for her energetic personality and expressive reactions, Yuuko is the inspi
 ## ⚠️ Notes and Limitations
 
 - **Windows only:** The application uses Windows-specific functionality through `ctypes` and Tkinter's `iconbitmap()`.
-- **Required assets:** Keep `face.png`, `icon.ico`, and `sound.MP3` in the `files` directory.
+- **Required assets:** Keep `face.png`, `icon.ico`, and `sound.mp3` in the `files` directory.
 - **Relative asset paths:** Run the application from the project root directory unless the executable package has been prepared to handle its assets accordingly.
 - **Audio playback:** Voice playback depends on successful audio initialization and a working audio output device.
 - **No automatic scheduling:** The application plays the audio when launched; it does not schedule a greeting for a specific time.
