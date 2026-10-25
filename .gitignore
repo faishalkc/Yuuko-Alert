@@ -1,0 +1,62 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# PyInstaller
+*.spec
+# Keep a spec file if it is intentionally maintained:
+#!*.spec
+
+# Test, coverage, and type-checker caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~*
+
+# Windows-generated files
+Thumbs.db
+Thumbs.db:Zone.Identifier
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Local environment/configuration files
+.env
+.env.*
+!.env.example
+
+# Local application data (if generated during development)
+*.local
