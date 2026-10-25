@@ -106,6 +106,7 @@ Yuuko-Alert/
 │   └── sound.mp3
 ├── platforms/
 │   └── windows.py
+├── .gitignore
 ├── main.py
 ├── requirements.txt
 └── README.md
@@ -118,6 +119,7 @@ Yuuko-Alert/
 | `files/face.png` | Character image displayed in the greeting window. |
 | `files/icon.ico` | Application window icon (used on Windows). |
 | `files/sound.mp3` | Audio clip played when the application starts. |
+| `.gitignore` | Specifies files and directories that Git should ignore. |
 | `requirements.txt` | List of third-party Python dependencies. |
 | `README.md` | Project documentation. |
 
